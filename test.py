@@ -10,5 +10,5 @@ class TravisTest(unittest.TestCase):
 
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TravisTest)
-ret = unittest.TextTestRunner(verbosity=2).run(suite).wasSuccessful()
+ret = not unittest.TextTestRunner(verbosity=2).run(suite).wasSuccessful()
 sys.exit(ret)
