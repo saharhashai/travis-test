@@ -3,7 +3,7 @@ import sys
 
 class TravisTest(unittest.TestCase):
     def test_fail(self):
-        self.assertEqual(1, 0)
+        self.assertEqual(1, 3)
 
     def test_success(self):
         self.assertEqual(1, 1)
