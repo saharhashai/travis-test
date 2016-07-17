@@ -10,4 +10,4 @@ script:
 notifications:
   webhooks:
     - http://posttestserver.com/post.php
-    - https://6pyhutzj1f.execute-api.eu-central-1.amazonaws.com/dev/function1/build_fail
+	- https://6pyhutzj1f.execute-api.eu-central-1.amazonaws.com/dev/function1/build_fail
