@@ -1,5 +1,5 @@
 import unittest
-
+import sys
 
 class TravisTest(unittest.TestCase):
     def test_fail(self):
@@ -10,4 +10,5 @@ class TravisTest(unittest.TestCase):
 
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TravisTest)
-unittest.TextTestRunner(verbosity=2).run(suite)
+ret = unittest.TextTestRunner(verbosity=2).run(suite).wasSuccessful()
+sys.exit(ret)
